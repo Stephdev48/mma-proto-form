@@ -6,40 +6,38 @@
 
 <p class="validate">Validé !</p>
 
-<?php
-echo "<pre>";
-var_dump($_SESSION);
-echo "</pre>";
-
-// echo "<pre>";
-// var_dump($id_users);
-// echo "</pre>";
-?>
-
 
 <?php
     require("footer.req.php");
-    unset($_SESSION['info']['siret']);
+    require("connect.php");
+    $sql = mysqli_query($conn, "INSERT INTO souscripteurs (nom, prenom, telephone, email, num_siret, metier) VALUES ('$nom', '$prenom', '$phone', '$email', '$siret', '$job')");
 
-    echo "<pre>";
-    var_dump($_SESSION);
-    echo "</pre>";
+    if ($sql){
+        unset($_SESSION['info']);
+    }
+    // unset($_SESSION['info']['siret']);
 
-    echo "<pre>";
-    var_dump($id_session);
-    echo "</pre>";
+    // echo "<pre>";
+    // var_dump($_SESSION);
+    // echo "</pre>";
 
-    echo "<pre>";
-    var_dump($_COOKIE['PHPSESSID']);
-    echo "</pre>";
+    // echo "<pre>";
+    // var_dump($id_session);
+    // echo "</pre>";
 
-    session_unset();
+    // echo "<pre>";
+    // var_dump($_COOKIE['PHPSESSID']);
+    // echo "</pre>";
 
-    echo "<pre>";
-    var_dump($_SESSION);
-    echo "</pre>";
+    // session_unset();
 
-    echo "<pre>";
-    var_dump($id_session);
-    echo "</pre>";
+    // echo "<pre>";
+    // var_dump($_SESSION);
+    // echo "</pre>";
+
+    // echo "<pre>";
+    // var_dump($id_session);
+    // echo "</pre>";
 ?>
+
+<a href="step1.php">Nouveau souscripteur</a>

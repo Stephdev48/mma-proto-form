@@ -8,6 +8,11 @@
 </head>
 <body>
     <header>
-        <h1>Formulaire DO</h1>
-        <img src="assets/pictures/cc-assur.jpeg"/>
+        <div>
+            <img src="assets/pictures/cc-assur.jpeg"/>
+        </div>
+        <div class="header_title">
+            <h1>Formulaire Dommages Ouvrages</h1>
+        </div>
     </header>
+    <hr>

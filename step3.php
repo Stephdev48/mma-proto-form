@@ -23,7 +23,7 @@
         <input type="text" name="siret"><br>
         <label for="">Métier</label><br>
         <input type="text" name="job"><br>
-        <input type="submit" name="next" value="Suivant">
+        <input type="submit" name="next" value="Validation">
     </form>
 </section>
 
