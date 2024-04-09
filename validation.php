@@ -15,9 +15,27 @@ echo "</pre>";
 
 <?php
     require("footer.req.php");
-    unset($_SESSION);
+    unset($_SESSION['info']['siret']);
 
     echo "<pre>";
     var_dump($_SESSION);
+    echo "</pre>";
+
+    echo "<pre>";
+    var_dump($id_session);
+    echo "</pre>";
+
+    echo "<pre>";
+    var_dump($_COOKIE['PHPSESSID']);
+    echo "</pre>";
+
+    session_unset();
+
+    echo "<pre>";
+    var_dump($_SESSION);
+    echo "</pre>";
+
+    echo "<pre>";
+    var_dump($id_session);
     echo "</pre>";
 ?>
