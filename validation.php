@@ -10,6 +10,10 @@
 echo "<pre>";
 var_dump($_SESSION);
 echo "</pre>";
+
+// echo "<pre>";
+// var_dump($id_users);
+// echo "</pre>";
 ?>
 
 
