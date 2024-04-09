@@ -1,6 +1,7 @@
 <?php
     require_once("session.req.php");
     require("header.req.php");
+    
     if (isset($_POST['next'])) {
 		foreach ($_POST as $key => $value)
 		{
