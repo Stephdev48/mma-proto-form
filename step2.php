@@ -23,7 +23,7 @@
         <label for="">Téléphone</label><br>
         <input type="text" name="phone"><br>
         <label for="">Email</label><br>
-        <input type="text" name="email"><br>
+        <input type="email" name="email"><br>
         <input type="submit" name="next" value="Suivant">
     </form>
 </section>
