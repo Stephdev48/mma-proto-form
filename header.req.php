@@ -8,7 +8,7 @@
 </head>
 <?php 
 //activation du mode debug
-define('DEBUG', false);
+define('DEBUG', true);
 ?>
 <body>
     <header>

@@ -19,7 +19,7 @@
     );
 
     if ($sql){
-        unset($_SESSION['info']);
+        unset($_SESSION['info-souscripteur'], $_SESSION['info-enterprise']);
     }
 ?>
 
